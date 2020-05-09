@@ -5,8 +5,9 @@ defmodule Os do
   @doc """
   Wrapper for the `type` function.
   """
+
   def check_type() do
-    case type do
+    case type() do
       {:win32, :nt} -> "windows"
       {:unix, :sunos} -> "sunos"
       {:unix, :linux} -> "linux"
