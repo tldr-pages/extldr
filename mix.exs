@@ -6,7 +6,7 @@ defmodule ExTldr.MixProject do
       app: :ex_tldr,
       description: description(),
       version: "0.2.0",
-      elixir: "~> 1.9",
+      elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       escript: [main_module: ExTldr, name: "extldr"],
