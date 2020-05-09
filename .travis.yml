@@ -1,10 +1,11 @@
 language: elixir
-elixir: "1.9.4"
-otp_release: "22.3"
+elixir:
+  - "1.9"
+  - "1.8"
+  - "1.7" 
+otp_release:
+  - "22.3"
+  - "21.2.6"
 env:
   - MIX_ENV=test
 script: mix coveralls.travis
-jobs:
-  include:
-    - elixir: "1.7.4"
-      otp_release: "21.2.6"
