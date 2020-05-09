@@ -37,8 +37,8 @@ Then, if you like, you can make it globally available with a symbolic link or ad
 
 Although I prefer to track possible enhancements and ideas in the issues, below there are some essentials:
 
-  - [ ] Multilingual support (#1).
-  - [x] Check by default the operating system in which ExTldr is being executed (#2).
+  - [ ] Multilingual support ([#1](https://github.com/ivanhercaz/extldr/issues/1)).
+  - [x] Check by default the operating system in which ExTldr is being executed ([#2](https://github.com/ivanhercaz/extldr/issues/2)).
 
 ## Inspiration
 
