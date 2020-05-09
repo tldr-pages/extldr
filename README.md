@@ -1,5 +1,8 @@
 # ExTldr
 
+[![Coverage Status](https://coveralls.io/repos/github/ivanhercaz/extldr/badge.svg?branch=master)](https://coveralls.io/github/ivanhercaz/extldr?branch=master)
+[![Build Status](https://travis-ci.com/ivanhercaz/extldr.svg?branch=master)](https://travis-ci.com/ivanhercaz/extldr)
+
 ExTldr is an Elixir client for [tldr-pages](https://github.com/tldr-pages/tldr).
 
 ## Requirement
