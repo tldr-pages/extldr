@@ -27,12 +27,12 @@ defmodule ExTldrTest do
     assert capture_io(execute_main) =~ "# tldr"
   end
 
-  test "without os specified" do
+  test "linux command without os specified" do
     execute_main = fn ->
       ExTldr.main(["acpi"])
     end
 
-    assert_raise MatchError, execute_main
+    assert capture_io(execute_main) =~ "# acpi"
   end
 
   test "look for an nonexistent command" do
