@@ -47,7 +47,6 @@ defmodule ExTldr do
   end
 
   defp describe(os_term) do
-    IO.puts(process(:help))
     [os, term] = Enum.join(os_term, " ") |> String.split()
 
     case HTTPoison.get(process_url(os, term)) do
