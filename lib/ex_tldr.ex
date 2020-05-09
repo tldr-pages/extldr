@@ -9,7 +9,7 @@ defmodule ExTldr do
   def main(args) do
     args
     |> parse_args
-    |> process
+    |> process_os_term
   end
 
   defp parse_args(args) do
@@ -40,15 +40,23 @@ defmodule ExTldr do
     """)
   end
 
-  defp process(os_term), do: describe(os_term)
+  defp process(os, term), do: describe(os, term)
 
   defp process_url(os, term) do
     "https://raw.githubusercontent.com/tldr-pages/tldr/master/pages/#{os}/#{term}.md"
   end
 
-  defp describe(os_term) do
-    [os, term] = Enum.join(os_term, " ") |> String.split()
+  defp process_os_term(os_term) when length(os_term) == 1 do
+    [os, term] = Enum.join([Os.check_type(), os_term], " ") |> String.split()
+    process(os, term)
+  end
 
+  defp process_os_term(os_term) when length(os_term) == 2 do
+    [os, term] = Enum.join(os_term, " ") |> String.split()
+    process(os, term)
+  end
+
+  defp describe(os, term) do
     case HTTPoison.get(process_url(os, term)) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         IO.puts(body)
