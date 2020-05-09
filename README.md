@@ -8,6 +8,7 @@ ExTldr is an Elixir client for [tldr-pages](https://github.com/tldr-pages/tldr).
 ## Requirement
 
   - Erlang/OTP installed (it does not require Elixir, because Elixir is embedded in the script).
+    - Read [*Erlang package from official repositories (Linux)*](https://github.com/ivanhercaz/extldr/wiki/Erlang-package-from-official-repositories-(Linux)) to know about tested versions of Erlang available on some Linux distributions.
   - Download ExTldr. You can:
     - [Download the latest release](https://github.com/ivanhercaz/extldr/releases).
     - Clone this repository.
