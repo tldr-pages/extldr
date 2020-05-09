@@ -15,6 +15,10 @@ Once you have downloaded ExTldr, and unzipped in the case you downloaded a relea
 
 The first argument of the script is the operating system, the second argument is the command/term you want search. Below there are some examples:
 
+  - Search command `feh` in the pages of your current operating system:
+
+    `extldr feh`
+
   - Search Linux command `adduser`:
 
     `extldr linux adduser`
@@ -33,8 +37,8 @@ Then, if you like, you can make it globally available with a symbolic link or ad
 
 Although I prefer to track possible enhancements and ideas in the issues, below there are some essentials:
 
-  - Multilingual support.
-  - Check by default the operating system in which ExTldr is being executed.
+  - [ ] Multilingual support (#1).
+  - [x] Check by default the operating system in which ExTldr is being executed (#2).
 
 ## Inspiration
 
