@@ -15,11 +15,17 @@ Once you have downloaded ExTldr, and unzipped in the case you downloaded a relea
 
 The first argument of the script is the operating system, the second argument is the command/term you want search. Below there are some examples:
 
-  - Search Linux command `adduser`: `extldr linux adduser`
+  - Search Linux command `adduser`:
 
-  - Search a common command, `chroot`, in different operating system: `extldr common chroot`
+    `extldr linux adduser`
 
-  - Search Linux command `cat`, available in common pages due it is available in different operating systems: `extldr linux cat`
+  - Search a common command, `chroot`, in different operating system:
+
+    `extldr common chroot`
+
+  - Search Linux command `cat`, available in common pages due it is available in different operating systems:
+
+    `extldr linux cat`
 
 Then, if you like, you can make it globally available with a symbolic link or adding it to your `PATH`.
 
@@ -29,6 +35,10 @@ Although I prefer to track possible enhancements and ideas in the issues, below 
 
   - Multilingual support.
   - Check by default the operating system in which ExTldr is being executed.
+
+## Inspiration
+
+ExTldr is heavily inspired by the great and awesome work of the tldr-pages community and the actually archived [TLDR Elixir Client](https://github.com/edgurgel/tldr_elixir_client) developed by [Eduardo Gurgel](https://github.com/edgurgel).
 
 ## License
 
