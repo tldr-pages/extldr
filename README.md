@@ -42,4 +42,4 @@ ExTldr is heavily inspired by the great and awesome work of the tldr-pages commu
 
 ## License
 
-ExTldr is license under the [GNU General Public License v3.0](https://github.com/ivanhercaz/extldr/blob/master/COPYING).
+ExTldr is licensed under the [GNU General Public License v3.0](https://github.com/ivanhercaz/extldr/blob/master/COPYING).
