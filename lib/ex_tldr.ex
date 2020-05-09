@@ -27,6 +27,9 @@ defmodule ExTldr do
     ExTldr is an Elixir client for tldr-pages
 
     Usage:
+      - Search command `feh` in the pages of your current operating system:
+      `extldr feh`
+
       - Search Linux command `adduser`:
       `extldr linux adduser`
 
