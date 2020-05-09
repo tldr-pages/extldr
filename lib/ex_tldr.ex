@@ -46,6 +46,8 @@ defmodule ExTldr do
     "https://raw.githubusercontent.com/tldr-pages/tldr/master/pages/#{os}/#{term}.md"
   end
 
+  defp process_os_term(:help), do: process(:help)
+
   defp process_os_term(os_term) when length(os_term) == 1 do
     [os, term] = Enum.join([Os.check_type(), os_term], " ") |> String.split()
     process(os, term)
