@@ -37,7 +37,8 @@ defmodule ExTldr.MixProject do
   defp deps do
     [
       {:httpoison, "~> 1.6"},
-      {:excoveralls, "~> 0.12.3", only: :test}
+      {:excoveralls, "~> 0.12.3", only: :test},
+      {:inch_ex, only: [:docs, :test]}
     ]
   end
 end
