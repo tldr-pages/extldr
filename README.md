@@ -1,5 +1,6 @@
 # ExTldr
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/347f0c83749f42d0926fb286028a8f07)](https://app.codacy.com/manual/ivanhercaz/extldr?utm_source=github.com&utm_medium=referral&utm_content=ivanhercaz/extldr&utm_campaign=Badge_Grade_Settings)
 [![Coverage Status](https://coveralls.io/repos/github/ivanhercaz/extldr/badge.svg?branch=master)](https://coveralls.io/github/ivanhercaz/extldr?branch=master)
 [![Build Status](https://travis-ci.com/ivanhercaz/extldr.svg?branch=master)](https://travis-ci.com/ivanhercaz/extldr)
 
