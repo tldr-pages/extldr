@@ -39,7 +39,7 @@ defmodule ExTldr do
       - Search Linux command `cat`, available in common pages due it is available in different operating systems:
       `extldr linux cat`
 
-    If you have an issue or a suggestion, you can post a new issue on https://github.com/ivanhercaz/extldr
+    If you have an issue or a suggestion, you can post a new issue on https://github.com/tldr-pages/extldr
     """)
   end
 
