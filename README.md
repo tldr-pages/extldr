@@ -1,6 +1,6 @@
 # ExTldr
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/347f0c83749f42d0926fb286028a8f07)](https://app.codacy.com/manual/tldr-pages/extldr?utm_source=github.com&utm_medium=referral&utm_content=tldr-pages/extldr&utm_campaign=Badge_Grade_Settings)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/83d63c07f9ca45af9fac591a2c51e8e6)](https://www.codacy.com/gh/tldr-pages/extldr)
 [![Coverage Status](https://coveralls.io/repos/github/tldr-pages/extldr/badge.svg?branch=master)](https://coveralls.io/github/tldr-pages/extldr?branch=master)
 [![Build Status](https://travis-ci.com/tldr-pages/extldr.svg?branch=master)](https://travis-ci.com/tldr-pages/extldr)
 [![Inline docs](http://inch-ci.org/github/tldr-pages/extldr.svg?branch=HEAD&style=shields)](http://inch-ci.org/github/tldr-pages/extldr)
