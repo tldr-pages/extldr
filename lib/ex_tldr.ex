@@ -79,8 +79,11 @@ defmodule ExTldr do
             IO.puts("Term not found on \"common\" pages.")
         end
 
-      {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect(reason)
+      {:error, %HTTPoison.Error{reason: reason}} when reason == :nxdomain ->
+        raise NoInternetConnectionError
+
+      {:error, %HTTPoison.Error{reason: reason}} when reason != :nxdomain ->
+        raise UnexpectedError, reason
     end
   end
 end
