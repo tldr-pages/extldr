@@ -2,7 +2,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/83d63c07f9ca45af9fac591a2c51e8e6)](https://www.codacy.com/gh/tldr-pages/extldr)
 [![Coverage Status](https://coveralls.io/repos/github/tldr-pages/extldr/badge.svg?branch=master)](https://coveralls.io/github/tldr-pages/extldr?branch=master)
-[![Build Status](https://travis-ci.com/tldr-pages/extldr.svg?branch=master)](https://travis-ci.com/tldr-pages/extldr)
+[![Build Status](https://img.shields.io/github/workflow/status/tldr-pages/extldr/Continuous%20Integration.svg)](https://github.com/tldr-pages/extldr/actions)
 [![Inline docs](http://inch-ci.org/github/tldr-pages/extldr.svg?branch=HEAD&style=shields)](http://inch-ci.org/github/tldr-pages/extldr)
 
 ExTldr is an Elixir client for [tldr-pages](https://github.com/tldr-pages/tldr).
