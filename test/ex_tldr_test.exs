@@ -1,7 +1,12 @@
 defmodule ExTldrTest do
   use ExUnit.Case
   import ExUnit.CaptureIO
+  alias ClientMock
   doctest ExTldr
+
+  import Mox
+
+  setup :verify_on_exit!
 
   test "look for a linux command" do
     execute_main = fn ->
@@ -58,4 +63,12 @@ defmodule ExTldrTest do
 
     assert capture_io(execute_main) =~ "Usage:"
   end
+
+  #test "should return lack of internet" do
+    # assert_raise NoInternetConnectionError,
+    #             fn ->
+    #               ClientMock
+    #               |> expect(:get, fn _ -> {:error, %HTTPoison.Error{reason: :nxdomain}} end)
+    #             end
+  #end
 end
