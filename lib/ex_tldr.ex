@@ -3,6 +3,8 @@ defmodule ExTldr do
   Documentation for ExTldr, an Elixir client for tldr-pages.
   """
 
+  @http_client Application.get_env(:ex_tldr, :http_client, HTTPoison)
+
   @doc """
   Wrapper for the CLI of the ExTldr client. 
   """
@@ -62,7 +64,7 @@ defmodule ExTldr do
   end
 
   defp describe(os, term) do
-    case HTTPoison.get(process_url(os, term)) do
+    case @http_client.get(process_url(os, term)) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         IO.puts(body)
 
@@ -71,7 +73,7 @@ defmodule ExTldr do
           "Term \"#{term}\" not found on \"#{os}\" pages\nExTldr is looking on \"common\" pages."
         )
 
-        case HTTPoison.get(process_url("common", term)) do
+        case @http_client.get(process_url("common", term)) do
           {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
             IO.puts(body)
 
