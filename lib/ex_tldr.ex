@@ -48,7 +48,7 @@ defmodule ExTldr do
   defp process(os, term), do: describe(os, term)
 
   defp process_url(os, term) do
-    "https://raw.githubusercontent.com/tldr-pages/tldr/master/pages/#{os}/#{term}.md"
+    "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages/#{os}/#{term}.md"
   end
 
   defp process_os_term(:help), do: process(:help)
