@@ -1,7 +1,6 @@
 # ExTldr
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/83d63c07f9ca45af9fac591a2c51e8e6)](https://www.codacy.com/gh/tldr-pages/extldr)
-[![Coverage Status](https://coveralls.io/repos/github/tldr-pages/extldr/badge.svg?branch=master)](https://coveralls.io/github/tldr-pages/extldr?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/tldr-pages/extldr/badge.svg?branch=main)](https://coveralls.io/github/tldr-pages/extldr?branch=main)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/tldr-pages/extldr/.github/workflows/ci.yml?branch=master)](https://github.com/tldr-pages/extldr/actions)
 [![Inline docs](http://inch-ci.org/github/tldr-pages/extldr.svg?branch=HEAD&style=shields)](http://inch-ci.org/github/tldr-pages/extldr)
 
@@ -19,7 +18,7 @@ ExTldr is an Elixir client for [tldr-pages](https://github.com/tldr-pages/tldr).
 
 Once you have downloaded ExTldr, and unzipped in the case you downloaded a release, you can execute the script: `./extldr`
 
-The first argument of the script is the operating system, the second argument is the command/term you want search. Below there are some examples:
+The script's first argument is the operating system, and the second argument is the command/term you want to search. Below there are some examples:
 
   - Search command `feh` in the pages of your current operating system:
 
@@ -29,7 +28,7 @@ The first argument of the script is the operating system, the second argument is
 
     `extldr linux adduser`
 
-  - Search a common command, `chroot`, in different operating system:
+  - Search a common command, `chroot`, in different operating systems:
 
     `extldr common chroot`
 
