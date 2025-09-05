@@ -1,11 +1,10 @@
-defmodule Os do
+defmodule ExTldr.OS do
   @moduledoc """
   Module to wrap functions of the `os` Erlang's module.
   """
   @doc """
   Wrapper for the `type` function.
   """
-
   def check_type() do
     case type() do
       {:win32, :nt} -> "windows"
