@@ -6,7 +6,7 @@ defmodule ExTldr.MixProject do
       app: :ex_tldr,
       description: description(),
       version: "0.2.0",
-      elixir: "~> 1.7",
+      elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       escript: [main_module: ExTldr, name: "extldr"],
@@ -36,9 +36,9 @@ defmodule ExTldr.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpoison, "~> 1.6"},
-      {:mox, "~> 0.5.2"},
-      {:excoveralls, "~> 0.12.3", only: :test},
+      {:httpoison, "~> 1.8"},
+      {:mox, "~> 1.2"},
+      {:excoveralls, "~> 0.18"},
       {:inch_ex, only: [:docs, :test]}
     ]
   end
